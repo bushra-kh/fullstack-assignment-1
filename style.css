@@ -40,11 +40,11 @@ header{
     width: 30px;
     border-radius: 50%;
     background-image: url("assets/search.png");
-    background-size: cover; /* Ensures the image covers the entire button */
+    background-size: cover; 
 }
 #searchbar button:hover{
     cursor: pointer;
-    transform: translate(0.5px, 0.5px); /* Moves .5px right, .5px down */
+    transform: translate(0.5px, 0.5px); 
 }
 .nav-links button{
     background-color: rgb(57, 130, 57);
@@ -80,9 +80,6 @@ input[type="checkbox"] {
 }
 
 #sidebar {
-    /* border: 2px solid rgb(23, 9, 9); */
-    /* border-right: 1px solid grey; */
-    /* border-image: linear-gradient(to bottom, transparent, grey, transparent) ; */
     box-shadow: 0 30px 40px -10px rgba(0,0,0,.1);
     background-color: rgb(244, 250, 246);
     display: grid;
@@ -111,12 +108,16 @@ input[type="checkbox"] {
     flex-direction: row;
     border: 2px solid rgb(237, 231, 231);
     box-shadow: 1px 1px -4px rgb(237, 231, 231);
-    margin-top: 8px;
+    margin: 8px auto;
     border-radius: 8px;
+    padding: 5px;
+    overflow-x: auto; 
+    max-width: 100%;
 }
 #CategoryPhone p{
     padding: 0 9px;
     font-size: small;
+     white-space: nowrap; /*this is a hidden gem */
 }
 .sidebar-section {
     display: grid;
@@ -124,7 +125,7 @@ input[type="checkbox"] {
     width: inherit;
     overflow: scroll;
     height: 200px;
-    /* border: 3px solid rgb(61, 39, 39); */
+
 
 }
 .sidebar-section p {
@@ -214,11 +215,6 @@ input[type="checkbox"] {
     width: 150px;
     border-radius: 8px;
     margin-top: 6px;
-    /* box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    border: 13px solid #F4FAF6; */
-
 }
 .cards{
     box-shadow: 2px 2px 5px #ccc, 0 0 6px rgb(212, 141, 141);
@@ -273,19 +269,30 @@ input[type="checkbox"] {
 
             /* flitering */
 
+body:has(:is(#filter-books, #filter-books-phone):checked) .cards:not(.books) {
+    display: none;
+}
 
+body:has(:is(#filter-electronics, #filter-electronics-phone):checked) .cards:not(.electronics) {
+    display: none;
+}
 
+body:has(:is(#filter-clothing, #filter-clothing-phone):checked) .cards:not(.clothing) {
+    display: none;
+}
 
+body:has(:is(#filter-appliances, #filter-appliances-phone):checked) .cards:not(.appliances) {
+    display: none;}
 
 
     
     /* MEDIA QUERIES */
     /* desktop */
     @media only screen and (min-width: 1100px) {
-            #CategoryPhone{
-                 display: none;
-            }
-            }
+        #CategoryPhone{
+            display: none;
+        }
+        }
     @media screen and (min-width: 600px) and (max-width: 1100px)  {
         #prod-grid{
             display: grid;

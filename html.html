@@ -23,10 +23,11 @@
 </header>
 <body>
     <div id="CategoryPhone">
-                <p><input type="radio" name="product-category"  id="filter-books" class="grey"><label for="filter-books">Books</label></p>
-                <p><input type="radio" name="product-category" id="filter-electronics" class="grey"><label for="filter-electronics">Electronics</label></p>
-                <p><input type="radio" name="product-category" id="filter-clothing" class="grey"><label for="filter-clothing">Clothing & Shoes</label></p>
-                <p><input type="radio" name="product-category" id="filter-appliances" class="grey"><label for="filter-appliances">Home Appliances</label></p>
+                <p><input type="radio" name="product-category"  id="filter-all-phone" class="grey"><label for="filter-all-phone">See All</label></p>
+                <p><input type="radio" name="product-category"  id="filter-books-phone" class="grey"><label for="filter-books-phone">Books</label></p>
+                <p><input type="radio" name="product-category" id="filter-electronics-phone" class="grey"><label for="filter-electronics-phone">Electronics</label></p>
+                <p><input type="radio" name="product-category" id="filter-clothing-phone" class="grey"><label for="filter-clothing-phone">Clothing & Shoes</label></p>
+                <p><input type="radio" name="product-category" id="filter-appliances-phone" class="grey"><label for="filter-appliances-phone">Home Appliances</label></p>
             </div>
     <DIV id="main-grid">
                                 <!-- SIDEBAR -->
@@ -34,11 +35,11 @@
         <div id="sidebar">
             <div class="sidebar-section">
                 <p class="sidebar-title">Category</p>
+                <p><input type="radio" name="product-category"  id="filter-all" class="grey"><label for="filter-all">See All</label></p>
                 <p><input type="radio" name="product-category" id="filter-books"  class="grey"><label for="filter-books">Books</label></p>
                 <p><input type="radio" name="product-category" id="filter-electronics" class="grey"><label for="filter-electronics">Electronics</label></p>
                 <p><input type="radio" name="product-category" id="filter-clothing" class="grey"><label for="filter-clothing">Clothing & Shoes</label></p>
                 <p><input type="radio" name="product-category" id="filter-appliances"  class="grey"><label for="filter-appliances">Home Appliances</label></p>
-                <p class="see-all">See all</p>
                 <hr>
             </div>
             
@@ -60,12 +61,6 @@
                 <p><input type="radio" name="condition"> Used</p>
                 <hr>
             </div>
-            
-            <!-- <div class="sidebar-section">
-                <p class="sidebar-title">Ratings</p>
-                <img src="imgs/ratings.png" alt="ratings" 
-                width="140px" height="140px" style="margin-left: 10px;">
-            </div> -->
         </div>
                                     <!-- PRODUCT PAGE -->
         <div id="prod-page">
@@ -77,40 +72,40 @@
                 <div id="banimg"><img src="assets/Potted Plant Images Free Photos PNG Stickers Wallpapers & Backgrounds - rawpixel.png" alt=""></div>
             </div>
             <DIV id="prod-grid">
-                <div class="cards" class="filter electronics"><img src="assets/faster-s5-anc-over-ear-wireless-headphones-pakistan-priceoye-1lk1n.jpg" alt="">
+                <div class="cards electronics"><img src="assets/faster-s5-anc-over-ear-wireless-headphones-pakistan-priceoye-1lk1n.jpg" alt="">
                     <div class="placard"><p class="title">ANC Wireless Headphones</p><p class="price">Price: $400</p><button>Add to cart</button></div></div>
 
-                <div class="cards" class="filter books"><img src="assets/Babel by R F Kuang Blue House Books.png" alt="">
+                <div class="cards books"><img src="assets/Babel by R F Kuang Blue House Books.png" alt="">
                     <div class="placard"><p class="title">Babel by R.F Kuang</p><p class="price">Price: $99</p><button>Add to cart</button></div></div>
 
-                <div class="cards" class="filter appliances"><img src="assets/Dawlance Excel 1.5 Ton Inverter AC Silver Price Pakistan.png" alt="">
+                <div class="cards appliances"><img src="assets/Dawlance Excel 1.5 Ton Inverter AC Silver Price Pakistan.png" alt="">
                     <div class="placard"><p class="title">Dawlance Excel Inverter AC</p><p class="price">Price: $2400</p><button>Add to cart</button></div></div>
 
-                <div class="cards" class="filter appliances"><img src="assets/Microwave-Oven-price-in-Pakistan.jpg" alt="">
+                <div class="cards appliances"><img src="assets/Microwave-Oven-price-in-Pakistan.jpg" alt="">
                     <div class="placard"><p class="title">Microwave Oven</p><p class="price">Price: $900</p><button>Add to cart</button></div></div>
 
-                <div class="cards" class="filter books"><img src="assets/The Jasad Crown – The New Romantics.png" alt="">
+                <div class="cards books"><img src="assets/The Jasad Crown – The New Romantics.png" alt="">
                     <div class="placard"><p class="title">The Jasad Crown by Sara Hashem</p><p class="price">Price: $95</p><button>Add to cart</button></div></div>
 
-                <div class="cards" class="filter books"><img src="assets/If We Were Villains Anniversary Limited Edition – Custom Sprayed Edges.png" alt="">
+                <div class="cards books"><img src="assets/If We Were Villains Anniversary Limited Edition – Custom Sprayed Edges.png" alt="">
                     <div class="placard"><p class="title">If We Were Villains by M.L Rio</p><p class="price">Price: $79</p><button>Add to cart</button></div></div>
 
-                <div class="cards" class="filter appliances"><img src="assets/haier-hwm150-1678-automatic-washing-machine-1.jpg" alt="">
+                <div class="cards appliances"><img src="assets/haier-hwm150-1678-automatic-washing-machine-1.jpg" alt="">
                     <div class="placard"><p class="title">Haier HWM150 WAshing Machine</p><p class="price">Price: $1800</p><button>Add to cart</button></div></div>
 
-                <div class="cards" class="filter clothing"><img src="assets/jogger shoes in Blue Online in PakistanPakistan.png" alt="">
+                <div class="cards clothing"><img src="assets/jogger shoes in Blue Online in PakistanPakistan.png" alt="">
                     <div class="placard"><p class="title">Blue Jogger Shoes with Soft Soles</p><p class="price">Price: $149</p><button>Add to cart</button></div></div>
 
-                <div class="cards" class="filter electronics"><img src="assets/Sparx Ultra 11 128GB 8GB RAM Price in Pakistan.png" alt="">
+                <div class="cards electronics"><img src="assets/Sparx Ultra 11 128GB 8GB RAM Price in Pakistan.png" alt="">
                     <div class="placard"><p class="title">Sparx Ultra 11</p><p class="price">Price: $599</p><button>Add to cart</button></div></div>
 
-                <div class="cards" class="filter books"><img src="assets/Pacat C.S. - Captive Prince – De Queer Boekenkast.png" alt="">
+                <div class="cards books"><img src="assets/Pacat C.S. - Captive Prince – De Queer Boekenkast.png" alt="">
                     <div class="placard"><p class="title">Captive Prince by Pacat C.S.</p><p class="price">Price: $79</p><button>Add to cart</button></div></div>
 
-                <div class="cards" class="filter electronics"><img src="assets/Screenshot 2025-09-26 at 22-44-17 Luna Android 32″ LED TV 512_4G – Luna.png" alt="">
+                <div class="cards electronics"><img src="assets/Screenshot 2025-09-26 at 22-44-17 Luna Android 32″ LED TV 512_4G – Luna.png" alt="">
                     <div class="placard"><p class="title">Luna Android 32″ LED TV</p><p class="price">Price: $2500</p><button>Add to cart</button></div></div>
 
-                <div class="cards" class="filter clothing"><img src="assets/Women's Denim Tops Coat Women Blue Long Sleeve Plus-size Denim.png" alt="">
+                <div class="cards clothing"><img src="assets/Women's Denim Tops Coat Women Blue Long Sleeve Plus-size Denim.png" alt="">
                     <div class="placard"><p class="title">Women's Denim Tops Coat</p><p class="price">Price: $56</p><button>Add to cart</button></div></div>
             </DIV>
         </div>
